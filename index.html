@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#10101c" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <title>Crystal Fruit Match</title>
+  </head>
+  <body>
+    <main id="app">
+      <section id="hud" aria-label="Game status"></section>
+      <canvas id="game" aria-label="Crystal Fruit Match game board"></canvas>
+      <section id="game-actions" aria-live="polite">
+        <p id="game-message"></p>
+        <button id="pause" type="button">Pause</button>
+        <button id="resume" type="button" hidden>Resume</button>
+        <button id="level-action" type="button" hidden></button>
+      </section>
+      <p id="offline-status" role="status" aria-live="polite">Checking offline availability…</p>
+    </main>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>
