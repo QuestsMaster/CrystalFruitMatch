@@ -1,0 +1,65 @@
+:root {
+  color: #f8f3ff;
+  background: #10101c;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #2b1f4a, #10101c 65%);
+}
+
+#app {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  min-height: 100dvh;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: env(safe-area-inset-top) 16px env(safe-area-inset-bottom);
+}
+
+#hud,
+#offline-status {
+  min-height: 2rem;
+}
+
+#game-actions {
+  min-height: 2.75rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#game-message { margin: 0; width: 100%; text-align: center; }
+
+button {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.55rem 1rem;
+  color: #19172a;
+  background: #ffd449;
+  font: 700 0.9rem system-ui;
+}
+
+#game {
+  width: 100%;
+  height: auto;
+  max-height: 70dvh;
+  aspect-ratio: 9 / 16;
+  place-self: center;
+  border-radius: 24px;
+  background: #19172a;
+  touch-action: none;
+  display: block;
+}
+
+#offline-status {
+  margin: 0;
+  text-align: center;
+  color: #c7c0dc;
+}
